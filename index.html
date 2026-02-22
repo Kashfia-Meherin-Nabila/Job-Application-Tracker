@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?     family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .geist-font {
+        font-family: "Geist", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+  <body class="geist-font w-[1600px] mx-auto bg-[#F8FAFC] min-h-screen">
+    <header class="w-[1200px] mx-auto border-b-gray-200">
+      <!-- website name -->
+      <h1 class="text-5xl bold text-[#002C5C] font-semibold pt-[60px] pb-5">
+        Job Application Tracker
+      </h1>
+
+      <!--dashboard Stats -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-gray-500">Total</p>
+          <p id="totalCount" class="text-xl font-bold">0</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-gray-500">Interview</p>
+          <p id="interviewCount" class="text-xl font-bold text-green-500">0</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow">
+          <p class="text-gray-500">Rejected</p>
+          <p id="rejectedCount" class="text-xl font-bold text-red-500">0</p>
+        </div>
+      </div>
+    </header>
+    <hr class="w-[1200px] mx-auto opacity-5" />
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
