@@ -59,7 +59,7 @@ function filterCards(type) {
   total2.innerText = visible + " jobs";
   setActiveTab(type);
 
-  //EMPTY STATE LOGIC 
+  
   if (visible === 0 && type !== "All") {
     emptyState.classList.remove("hidden");
 
@@ -75,7 +75,7 @@ function filterCards(type) {
 }
 
 
-// ACTIVE TAB STYLE
+// active tab
 
 function setActiveTab(activeType) {
   Object.keys(tabs).forEach(type => {
